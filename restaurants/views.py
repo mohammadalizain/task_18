@@ -154,7 +154,7 @@ def restaurant_update(request, restaurant_id):
     return render(request, 'update.html', context)
 
 def restaurant_delete(request, restaurant_id):
-    restaurant_obj = Restaurant.objects.get(id=restaurant_id)
+    restaurant_obj = Restaurant.objects.get(ihttp://127.0.0.1:8000/api/list/?search=<WHAT_YOU_WANT_TO_SEARCH_FOR>)
     if not (request.user.is_staff):
         return redirect('no-access')
     restaurant_obj.delete()
